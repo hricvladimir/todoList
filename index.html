@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- HEADING -->
+      <section class="section main-heading">
+        <h3><span id="greeting">Hello!</span> Welcome to your ToDo list!</h3>
+      </section>
+
+      <!-- TODO LIST -->
+      <section class="section todo-section">
+        <div class="todo-section-container">
+          <div class="new-todo-container">
+            <form id="add-form" action="">
+              <div class="input-container">
+                <input
+                  required
+                  class="add-input"
+                  type="text"
+                  placeholder="Input Your Todo Here"
+                />
+                <button class="btn function-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+              <div class="filter">
+                <select name="" class="filter-todo">
+                  <option class="filter-option" value="all">All</option>
+                  <option class="filter-option" value="completed">
+                    Completed
+                  </option>
+                  <option class="filter-option" value="uncompleted">
+                    Uncompleted
+                  </option>
+                </select>
+                <div class="btn filter-btn">
+                  <i class="fa-solid fa-filter" id="filter-btn"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="list-container">
+            <ul class="form-list">
+              <!-- BASIC LI STRUCTURE -->
+              <!-- <li class="list-item">
+                <p>Kokoty</p>
+                <div class="function-btn list-item-btns-container">
+                  <button class="btn green-btn">
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <button class="btn red-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn delete-btn" id="delete-btn">Clear Items</div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
